@@ -3,52 +3,37 @@
   margin: 0;
 } */
 
+:root {
+--primary-color-green: #4E7141;
+--secundary-color-orange: #F26F21;
+--secundary-color-bleu: #333467;
+}
+
+
 body {
     max-width: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color-green);
+  padding: 3em 10em 3em 10em;
 }
 
-.header-title{
-    background-image: url("assets/bc_header_bg.png");
-    background-size: cover;
-    padding-top: 60px;
-    padding-bottom: 30px;
-    margin-top: 50px;
-    color: #333467;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-.header-title > h1{
-    font-size: 34px;
-    text-transform: uppercase;
-    color: #F26F21;
-    display: inline-block;
-    padding: 10px 20px 10px 10px;
-    background-color: #fff;
+.rounded{
+  border-top: 5px solid var(--primary-color-green);
 }
 
 h3{
-    color: #F26F21;
-    font-size: 18px;
+    color: var(--secundary-color-orange);
+    font-size: 22pt;
     font-style: italic;
     font-weight: 300;
-}
-
-h4{
-  padding-top: 20px;
-  color: black;
-  font-size: 18px;
-  font-style: italic;
-  font-weight: 300;
 }
 
 
@@ -58,38 +43,53 @@ h4{
     margin-top: 150px;
     display: flex;
     justify-content: center;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-bottom: 150px;
+    flex-direction: column;
 }
 
 .het-ruilproces-info-tekst{
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 0px 300px 100px 300px;
 }
 
 .het-ruilproces-info-tekst > h1{
-    margin-left: 100px;
     font-weight: 600;
-    font-size: 40px;
-}
-
-.het-ruilproces-info-tekst > p{
-    margin-top: -10px;
-    margin-left: 100px;
+    font-size: 32pt;
+    color: var(--secundary-color-bleu);
 }
 
 .het-ruilproces-info > img{
     border-radius: 25px;
 }
 
+.het-ruilproces-info-tekst > button{
+  margin-top: 50px;
+  background-color: var(--secundary-color-orange);
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 1em;
+  font-size: 16px;
+  width: 20em;
+  cursor: pointer;
+  align-items: center;
+}
+
+.het-ruilproces-info-tekst > button:hover{
+  opacity: 0.7;
+}
+
 p{
-    color: black;
+    color: #727272;
     font-size: 18px;
     margin: 0;
     line-height: 20pt;
 }
+
+
 
 /* DONEREN CONTAINER */
 
@@ -98,7 +98,7 @@ p{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background-color:#333467;
+  background-color: var(--primary-color-green);
   width: 100%;
   padding-bottom: 100px;
 }
@@ -119,14 +119,14 @@ p{
 .stekjes-container-intro{
     padding-top: 100px;
     text-align: center;
-    background-color:#333467;
+    background-color: var(--primary-color-green);
     color: white;
 }
 
 .stekjes-container-intro > h1{
     color: white;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 32pt;
 }
 
 .stekjes-container-intro > p{
@@ -138,7 +138,7 @@ p{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        background-color:#333467;
+        background-color: var(--primary-color-green);
         width: 100%;
 }
 
@@ -163,7 +163,7 @@ p{
         outline: 0;
         padding: 12px;
         color: white;
-        background-color: #f26f21;
+        background-color: var(--secundary-color-orange);
         text-align: center;
         cursor: pointer;
         width: 100%;
@@ -187,7 +187,7 @@ p{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        background-color:#333467;
+        background-color: var(--primary-color-green);
         width: 100%;
     }
 
@@ -212,7 +212,7 @@ p{
         outline: 0;
         padding: 12px;
         color: white;
-        background-color: #f26f21;
+        background-color: var(--secundary-color-orange);
         text-align: center;
         cursor: pointer;
         width: 100%;
@@ -243,7 +243,8 @@ p{
 
 .buurtcampus-info-container-tekst > h1{
 font-weight: 600;
-font-size: 40px;
+font-size: 32pt;
+color: var(--secundary-color-bleu);
 }
 
 .buurtcampus-info-container > img{
@@ -254,24 +255,11 @@ margin-bottom: -50px;
 /* FOOTER */
 
 footer{
-    background-color: #655c4b;
+    background-color: var(--secundary-color-bleu);
     padding: 100px;
 }
 
 /* RESPOSIVE MENU */
-
-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #ffffff;
-    color: #FFF;
-    height: 50px;
-    padding: 1em;
-    margin-right: 100px;
-    margin-left: 100px;
-  }
   
   nav {
     display: flex;
@@ -284,18 +272,15 @@ header {
   nav > a{
     margin: 0 1rem;
     overflow: hidden;
-    color: #333467;
+    color: white;
     font-weight: 600;
-    padding: 10px;
     text-decoration: none;
+    width: 8em;
+    text-align: center;
   }
 
   nav > a:hover{
-    color: #f26f21;
-  }
-
-  #stekjesbieb-menu{
-    color: #f26f21;
+    color: var(--secundary-color-orange);
   }
   
   .menu-button-container {
@@ -316,7 +301,7 @@ header {
   .menu-button::before,
   .menu-button::after {
     display: block;
-    background-color: #333467;
+    background-color: white;
     position: absolute;
     height: 4px;
     width: 30px;
@@ -355,7 +340,7 @@ header {
     nav {
       position: absolute;
       top: 0;
-      margin-top: 150px;
+      margin-top: 120px;
       left: 0;
       flex-direction: column;
       width: 100%;
@@ -370,7 +355,6 @@ header {
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
     #menu-toggle:checked ~ nav a {
-      border: 1px solid #ffffff;
       height: 2.5em;
       padding: 0.5em;
       padding-top: 2em;
@@ -383,10 +367,15 @@ header {
       padding: 0.5em 0;
       width: 100%;
       color: #ffffff;
-      background-color: #333467;
+      background-color: #6c8b5f;
     }
     nav > a:not(:last-child) {
-      border-bottom: 1px solid #333467;
+      border-bottom: 1px solid var(--secundary-color-bleu);
+    }
+
+    nav > a:hover{
+      color: #ffffff;
+      background-color: #88a57b;
     }
 
     .de-stekjesbieb{
@@ -397,12 +386,12 @@ header {
 
     .het-ruilproces-info{
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       margin: 0;
       max-width: 100%;
       text-align: center;
       align-items: center;
-      padding: 100px 50px 150px 50px;
+      padding: 100px 0px 0px 0px;
     }
 
     .het-ruilproces-info-tekst > h1{
@@ -469,13 +458,13 @@ form { max-width:500px; margin:50px auto;
 }
 
 .feedback-input {
-  color:black;
+  color:#727272;
   font-weight:500;
   font-size: 18px;
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid #333467;
+  border:2px solid var(--secundary-color-bleu);
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -484,7 +473,7 @@ form { max-width:500px; margin:50px auto;
   outline:0;
 }
 
-.feedback-input:focus { border:2px solid #333467; }
+.feedback-input:focus { border:2px solid var(--secundary-color-bleu); }
 
 textarea {
   height: 150px;
@@ -494,7 +483,7 @@ textarea {
 
 [type="submit"] {
   width: 100%;
-  background:#333467;
+  background: var(--secundary-color-bleu);
   border-radius:5px;
   border:0;
   cursor:pointer;
@@ -506,4 +495,4 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
-[type="submit"]:hover { background:#f26f21; }
+[type="submit"]:hover { background: var(--secundary-color-bleu); }
