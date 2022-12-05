@@ -8,7 +8,8 @@
 
 Check hier mijn oplossing! https://rosahoffer.github.io/the-client-case/
 
-![stekjesbieb-platform-devices](https://user-images.githubusercontent.com/112861375/195560968-e3145483-9537-4b38-932a-5105ef80e00b.png)
+![device-plantswap-amsterdam](https://user-images.githubusercontent.com/112861375/205284895-eb6a31b1-81b7-4aa1-a786-b1514c8eaf4d.png)
+
 
 ### Beschrijving
 
