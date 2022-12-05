@@ -1,14 +1,17 @@
 # Buurtcampus-Oost
 
-### De user story:
+### De user story's:
 
 ***
 
 * _Als buurtbewoner van Amsterdam Oost wil ik kunnen zien welke stekjes momenteel in de stekjeskast zitten, zodat ik kan overwegen een stekje om te ruilen._
 
-Check hier mijn oplossing! https://rosahoffer.github.io/the-client-case/
+* _Als buurtbewoner van Amsterdam Oost wil ik een stekje kunnen toevoegen met behulp van een formulier_
 
-![stekjesbieb-platform-devices](https://user-images.githubusercontent.com/112861375/195560968-e3145483-9537-4b38-932a-5105ef80e00b.png)
+Check hier mijn oplossing! https://rosahoffer.github.io/look-and-feel-corporate-identity/
+
+![device-plantswap-amsterdam](https://user-images.githubusercontent.com/112861375/205284895-eb6a31b1-81b7-4aa1-a786-b1514c8eaf4d.png)
+
 
 ### Beschrijving
 
