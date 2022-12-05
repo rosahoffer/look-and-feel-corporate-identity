@@ -1,10 +1,12 @@
 # Buurtcampus-Oost
 
-### De user story:
+### De user story's:
 
 ***
 
 * _Als buurtbewoner van Amsterdam Oost wil ik kunnen zien welke stekjes momenteel in de stekjeskast zitten, zodat ik kan overwegen een stekje om te ruilen._
+
+* _Als buurtcampus Oost wil ik een plantje kunnen verwijderen als deze niet meer beschikbaar is_
 
 Check hier mijn oplossing! https://rosahoffer.github.io/look-and-feel-corporate-identity/
 
